@@ -29,6 +29,7 @@ header{
 	width: 100%;
 	visibility: visible;
 	opacity: 0.8;
+    
 }
 .fondoSec2{
 	position: fixed;
@@ -47,12 +48,13 @@ header{
 	min-height: 100%;
 	z-index: 3;
 	width: 100%;
-	display: none;
+    transform:scale(0);
+    transition: .8s;
+
 }
 #seccion1{
 	width: 66%;
 	top:45%;
-	
 }
 #uno img{
 	margin-top: 35px;

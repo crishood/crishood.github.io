@@ -29,7 +29,7 @@
 			 	</section>
 	</header>
 <!---------------------------------------------Sección 1-------------------------------------------->
-	<section id="uno">
+	<div id="uno">
 		<div class="fondoSec"></div>
 		<div class="fondoSec2"></div>
 		<section id="seccion1" class="container">
@@ -55,9 +55,9 @@
 
 			</article>
 		</section>
-	</section>
+	</div>
 <!---------------------------------------------Sección 2-------------------------------------------->
-	<section id="dos">
+	<div id="dos">
 		<div class="fondoSec"></div>
 		<div class="fondoSec2"></div>
 		<section id="seccion1" class="container">
@@ -86,9 +86,9 @@
 
 			</article>
 		</section>
-	</section>
+	</div>
 <!---------------------------------------------Sección 3-------------------------------------------->
-	<section id="tres">
+	<div id="tres">
 		<div class="fondoSec"></div>
 		<div class="fondoSec2"></div>
 		<section id="seccion1" class="container">
@@ -113,9 +113,9 @@
 				</div>
 			</article>
 		</section>
-	</section>
+	</div>
 <!---------------------------------------------Sección 4-------------------------------------------->
-	<section id="cuatro">
+	<div id="cuatro">
 		<div class="fondoSec"></div>
 		<div class="fondoSec2"></div>
 		<section id="seccion1" class="container">
@@ -173,7 +173,7 @@
 			</article>
 			
 		</section>
-	</section>
+	</div>
 	
 <!---------------------------------------------Menú-------------------------------------------->		<div id="principal" class="container">
 		<main id="menu">
@@ -241,10 +241,11 @@
 	 <script>
 		 function toggle_visibility(id) {
                 var em = document.getElementById(id);
-                if(em.style.display == 'block')
-                em.style.display = 'none';
+                if(em.style.transform == "scale(1)")
+                  em.style.transform = "scale(0)";
                 else
-                em.style.display = 'block';
+                  em.style.transform = "scale(1)";
+                 
             }
 	</script>
 		
