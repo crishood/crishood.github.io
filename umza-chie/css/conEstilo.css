@@ -113,20 +113,8 @@ h5{
 #reset:hover{
 	color: coral;
 }
-/* media querie*/
-@media only screen and (max-width : 768px) {
-main{
-	#grid{
-		width: 300px;
-	}
-	.casilla{
-		width: 100px;
-		height: 100px;
-		padding: 20px;
-		font-size: 38px;	
-	}
-}
-}
+
+
 /* Fuentes */
 @font-face {
     font-family: 'africanornamentsoneregular';
