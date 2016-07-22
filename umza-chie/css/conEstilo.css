@@ -114,7 +114,25 @@ h5{
 	color: coral;
 }
 /* responsive */
-
+/*media querie*/
+@media only screen and (max-width : 768px) {
+	main{
+		margin-top: 0;
+	}
+	h1{
+		display: none;
+	}
+	#grid{
+		top:35px;
+	}
+	h5{
+		display: inline;
+	}
+	h3, h2{
+		margin-top: 5px;
+		
+	}
+}
 
 /* Fuentes */
 @font-face {
