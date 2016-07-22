@@ -104,7 +104,7 @@ h2{
 
 
 h5{
-	color: coral;
+	display:none;
 }
 #reset{
 	cursor: pointer;
@@ -127,6 +127,10 @@ h5{
 	}
 	h5{
 		display: inline;
+		color:deeppink;
+	}
+	h5 span{
+		color:darkblue;
 	}
 	h3, h2{
 		margin-top: 5px;
