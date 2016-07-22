@@ -120,10 +120,17 @@ h5{
 	}
 	#grid{
 		top:100px;
+		width: 300px;
 	}
 	h1{
 		margin-top: 0;
 	}
+	.casilla{
+		width: 100px;
+		height: 100px;
+		padding: 20px;
+		font-size: 38px;
+		}
 }
 
 /* Fuentes */
