@@ -120,15 +120,15 @@ h5{
 	}
 	#grid{
 		top:100px;
-		width: 300px;
+		width: 270px;
 	}
 	h1{
 		margin-top: 0;
 	}
 	.casilla{
-		width: 100px;
-		height: 100px;
-		padding: 20px;
+		width: 90px;
+		height: 90px;
+		padding: 10px;
 		font-size: 38px;
 		}
 }
