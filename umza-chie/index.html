@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Umza-Chie</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/conEstilo.css">
+
+</head>
+
+<body>
+<section id="background"></section>
+	<main class="container-fluid">
+			<h1><span>Umza </span>- Chie</h1>
+			<h4 class="col-xs-6">0</h4>
+			<h4 class="col-xs-6">0</h4>
+			<br><br>
+		<img id="grid" src="img/grid.png" alt="">
+		<section class="row">
+			<article class="col-xs-4 casilla" onclick="triki(0);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(1);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(2);"></article>
+		</section>
+		<section class="row">
+			<article class="col-xs-4 casilla" onclick="triki(3);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(4);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(5);"></article>
+		</section>
+		<section class="row">
+			<article class="col-xs-4 casilla" onclick="triki(6);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(7);"></article>
+			<article class="col-xs-4 casilla" onclick="triki(8);"></article>
+		</section>
+		<section class="row">
+			<h3 class="col-xs-12">Turno de:</h3>
+			<h3 id="reset" onclick="reset();"></h3>
+			<h2 class="col-xs-12">Umza</h2>
+			<h5 >hood</h5>
+		</section>
+	</main>
+	<script>
+		/*Variables*/
+		var umzaPuntos = 0;
+		var chiePuntos = 0;
+		var turno = 0;
+		var lleno = [0,0,0,0,0,0,0,0,0];
+		var acierto = ["","","","","","","","",""];
+		var ganador = false;
+		/*Lógica del juego*/
+		var triki = function(i){
+			var cas = i;
+			var res = turno%2;
+			
+			if(lleno[i] === 0){
+				if(res === 0){
+					document.getElementsByTagName("article")[cas].innerHTML = "N";
+					document.getElementsByTagName("article")[cas].style.color = "darkblue";
+					document.getElementsByTagName("h2")[0].innerHTML = "Chie";
+					document.getElementsByTagName("h2")[0].style.color ="deeppink";
+					acierto[cas] = "x";
+					pararJuego();
+				}
+				else{
+					document.getElementsByTagName("article")[cas].innerHTML = "f";
+					document.getElementsByTagName("article")[cas].style.color = "deeppink";
+					document.getElementsByTagName("h2")[0].innerHTML = "Umza";
+					document.getElementsByTagName("h2")[0].style.color ="darkblue";
+					acierto[cas] = "o";
+					pararJuego();
+				}
+				lleno[i]=2;
+				turno++;
+			}
+					
+			document.getElementsByTagName("h4")[0].innerHTML = umzaPuntos;
+			document.getElementsByTagName("h4")[1].innerHTML = chiePuntos;
+			console.log(lleno);
+			
+		}
+		
+		var pararJuego = function(){
+			
+			if(acierto[0]==acierto[1] && acierto[1]==acierto[2]){
+				if(acierto[0]=="x"){
+					ganaUmza();
+					
+				}
+  	  	if(acierto[0]=="o"){
+				  ganaChie();
+				}
+							
+			}
+				
+			if(acierto[0]==acierto[4] && acierto[4]==acierto[8]){
+				if(acierto[0]=="x"){
+					ganaUmza();
+				}
+				if(acierto[0]=="o"){
+					ganaChie();
+				}
+				
+			}
+
+			if(acierto[0]==acierto[3] && acierto[3]==acierto[6]){
+				if(acierto[0]=="x"){
+					ganaUmza();
+				}
+				if(acierto[0]=="o"){
+					ganaChie();
+			  }
+				
+			}
+
+			if(acierto[1]==acierto[4] && acierto[4]==acierto[7]){
+				if(acierto[1]=="x"){
+					ganaUmza();
+					}
+				if(acierto[1]=="o"){
+					ganaChie();
+					}
+				
+			}
+
+			else if(acierto[2]==acierto[4] && acierto[4]==acierto[6]){
+				if(acierto[2]=="x"){
+					ganaUmza();
+					}
+				if(acierto[2]=="o"){
+					ganaChie();
+					}
+				
+			}
+
+			if(acierto[2]==acierto[5] && acierto[5]==acierto[8]){
+				if(acierto[2]=="x"){
+					ganaUmza();
+					}
+				if(acierto[2]=="o"){
+					ganaChie();
+					}
+				
+			}
+
+			if(acierto[3]==acierto[4] && acierto[4]==acierto[5]){
+				if(acierto[3]=="x"){
+					ganaUmza();
+					}
+				if(acierto[3]=="o"){
+					ganaChie();
+					}
+				
+			}
+
+			if(acierto[6]==acierto[7] && acierto[7]==acierto[8]){
+				if(acierto[6]=="x"){
+					ganaUmza();
+					}
+				if(acierto[6]=="o"){
+					ganaChie();
+					}
+			}
+			
+			if(turno == 8 && ganador == false){
+				document.getElementsByTagName("h2")[0].innerHTML = "¡Empate!";
+				document.getElementsByTagName("h2")[0].style.color ="black";
+				document.getElementsByTagName("h3")[0].innerHTML ="";
+				document.getElementsByTagName("h3")[1].innerHTML ="¿Volver a jugar?";
+			}
+									
+		}
+		var ganaUmza = function(){
+					document.getElementsByTagName("h2")[0].innerHTML = "Umza gana";
+					document.getElementsByTagName("h2")[0].style.color ="darkblue";
+					umzaPuntos +=1;
+					lleno = [2,2,2,2,2,2,2,2,2];
+					ganador = true;
+					document.getElementsByTagName("h3")[0].innerHTML ="";
+					document.getElementsByTagName("h3")[1].innerHTML ="¿Volver a jugar?";
+		}
+		var ganaChie = function(){
+					document.getElementsByTagName("h2")[0].innerHTML = "Chie gana";
+					document.getElementsByTagName("h2")[0].style.color ="deeppink";
+					chiePuntos +=1;
+					lleno = [2,2,2,2,2,2,2,2,2];
+					ganador = true;
+					document.getElementsByTagName("h3")[0].innerHTML ="";
+					document.getElementsByTagName("h3")[1].innerHTML ="¿Volver a jugar?";
+		}
+		var reset = function(){
+			turno = 0;
+			ganador = false;
+			lleno = [0,0,0,0,0,0,0,0,0];
+			acierto = ["","","","","","","","",""];
+			document.getElementsByTagName("h3")[0].innerHTML = "Turno de:";
+			document.getElementsByTagName("h3")[1].innerHTML = "";
+			document.getElementsByTagName("h2")[0].innerHTML = "Umza";
+			document.getElementsByTagName("article")[0].innerHTML = "";
+			document.getElementsByTagName("article")[1].innerHTML = "";
+			document.getElementsByTagName("article")[2].innerHTML = "";
+			document.getElementsByTagName("article")[3].innerHTML = "";
+			document.getElementsByTagName("article")[4].innerHTML = "";
+			document.getElementsByTagName("article")[5].innerHTML = "";
+			document.getElementsByTagName("article")[6].innerHTML = "";
+			document.getElementsByTagName("article")[7].innerHTML = "";
+			document.getElementsByTagName("article")[8].innerHTML = "";
+		}
+	</script>
+</body>
+</html>
