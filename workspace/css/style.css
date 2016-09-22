@@ -1,0 +1,127 @@
+/*-----PRINCIPAL STYLE SHEET-----------
+
+AUTOR: MOSTRO MEDIA
+
+*/
+
+/*PRINCIPAL STYLE BODY*/
+
+@font-face{
+  font-family: RobotoBold;
+  src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face{
+  font-family: RobotoLight;
+  src: url('fonts/Roboto-Light.ttf');
+}
+@font-face{
+  font-family: RobotoMedium;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face{
+  font-family: RobotoRegular;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face{
+  font-family: RobotoThin;
+  src: url('fonts/Roboto-Thin.ttf');
+}
+
+html,body{
+  margin:0;
+}
+/*--------END----------*/
+
+/*LOGO & SOCIAL MEDIA*/
+nav{
+  background-color:#363636;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99;
+}
+nav img{
+    height: 64px; 
+}
+/*--------END----------*/
+
+/*PRINCIPAL CONTENT & SECTIONS*/
+
+.main{
+ 
+}
+
+#home{
+  background-color: #E0540D;
+  padding-top:64px;
+}
+.home{
+  overflow: hidden;
+}
+.anim_home{
+  justify-content: center;
+}
+.anim_home img{
+  width: 425px;
+}
+
+#servicios{
+  background-color: #3498DB;
+  padding-top:64px;
+}
+.cont_serv{
+  
+}
+.cont_anim_servicios{
+  
+}
+.anim_servicios{
+  position: absolute;
+  top: 20%;
+  justify-content: center;
+}
+.anim_servicios img{
+  width: 425px;
+}
+
+#equipo{
+  background-color: #FA7878;
+  padding-top:64px;
+}
+.card .card-image img{
+  width: 40%;
+}
+.card .card-image .card-title{
+  font-size: 20px;
+  color:#000;
+}
+
+#contacto{
+  background-color: #FFCC08;
+  padding-top:64px;
+} 
+
+
+/* COLORES PRINCIPALES
+.orange{
+	background-color: #E0540D;
+}
+.blue{
+	background-color: #3498DB;
+}
+.guava{
+	background-color: #FA7878;
+}
+.wisteria{
+	background-color: #8E44AD;
+}
+.tangerine{
+	background-color: #FFCC08;
+}
+.paper{
+	background-color: #BDC3C7;
+}
+.emerald{
+	background-color: #2ECC71;
+} */ 
+/*--------END----------*/
