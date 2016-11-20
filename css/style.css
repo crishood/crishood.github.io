@@ -1,0 +1,160 @@
+/*general*/
+*{
+	font-family: 'Book Antiqua';
+	color: white;
+}
+#background{
+	position: absolute;
+	z-index: -10;
+}
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+
+/*header*/
+header{
+	padding-top: 25px;
+	text-align: center;
+}
+header .logo{
+	width: 90px;
+}
+/*aside*/
+aside{
+	position: fixed;
+	right: 50px;
+	top: 35%;
+}
+
+aside a{
+	text-decoration: none;
+}
+
+aside a:hover{
+	text-decoration: none;
+}
+
+aside a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+aside a p{
+	font-size: 32px;
+	text-decoration: none;
+	transition: all 0.6s;
+}
+
+aside a p:hover{
+	color: #009245;
+	
+}
+
+
+
+/*main*/
+main{
+	margin: 100px auto;
+	width: 60%;
+}
+.container{
+	width: 60%;
+}
+
+#pic{
+	position: absolute;
+	right: 0;
+	width: 60%;
+}
+#description{
+	font-size: 20px;
+}
+
+/*footer*/
+footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+footer ul{
+	list-style-type: none;
+	margin: 0 auto;
+}
+footer ul li{
+	display: inline-block;
+}
+footer ul li a{
+	
+	margin: 0 10px;
+	font-size: 24px;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+footer ul li a{
+	color: white;
+	text-decoration: none;
+}
+footer ul li a:hover{
+	color: #009245;
+	text-decoration: underline;
+}
+
+footer ul li a:visited{
+	color: white;
+}
+
+footer ul li a:focus, .active{
+	color: #009245;
+	text-decoration: underline;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 2s;
+    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.tabcontent {
+		display: none;
+    padding: 6px 12px;
+      
+}
+.f0{font-size: 24px;}
+.f1{font-size:30px;}
+.f2{font-size:32px;}
+.f3{font-size:34px;}
+.f4{font-size:40px;}
+.green{	color: #009245;}

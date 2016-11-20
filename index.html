@@ -6,250 +6,121 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/conEstilo.css">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/ch-ico.ico" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/social-font.css">
+  <link rel="shortcut icon" type="image/x-icon" href="" />
 </head>
 <body>
-	
-<!---------------------------------------------Fondo------------------------------------------------>
-	<div id="fondo" ></div>
-	<video id="videoBG" loop autoplay preload>
-			<source src="video/fondo.mp4" type="video/mp4"/>
-			<source src="video/fondo.webm" type="video/webm"/>
-			<source src="video/fondo.ogv" type="video/ogg"/>
-	</video>
-<!---------------------------------------------Header----------------------------------------------->
+	<div id="background">
+		<img class="bg" src="img/bg.png" alt="">
+	</div>
+	<!------------------------------------------header---------------------------------------------->
 	<header>
-			<section id="secciones">
-					<h1 id="quien">Acerca</h1>
-			 		<h1 id="habilidades">Herramientas</h1>
-			 		<h1 id="trabajo">Proyectos</h1>
-			 		<h1 id="contacto">Contacto</h1>
-			 	</section>
+		<img src="img/ch-shield-logo.svg" alt="" class="logo">
 	</header>
-<!---------------------------------------------Sección 1-------------------------------------------->
-	<div id="uno">
-		<div class="fondoSec"></div>
-		<div class="fondoSec2"></div>
-		<section id="seccion1" class="container">
-			<article class="row" id="vacio"></article>
-			<article class="row">
-				<img class="bhome" src="img/home.svg" height="30px" onclick="toggle_visibility('uno');">
-			</article>
-
-			<article class="row">
-
-				<img id="skills" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="img/hlogo.svg" onclick="toggle_visibility('uno');" height="150px">
-
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<h1>Cristhian Cepeda</h1>
-					<h3>"La versatilidad no se aprende, se lleva en la sangre"</h3>
-					<p>
-				Ingeniero en Multimedia con amplios conocimientos interdisciplinarios en el
-				área de la computación, inclinado por la creación de contenidos interactivos
-				orientados a la web. Habilidades en programación, diseño UX, desarollo
-				front-end, creación audiovisual y producción musical para proyectos interactivos.
-				Autodidacta, creativo y versátil.
-
-					</p>
-				</div>
-
-			</article>
-		</section>
-	</div>
-<!---------------------------------------------Sección 2-------------------------------------------->
-	<div id="dos">
-		<div class="fondoSec"></div>
-		<div class="fondoSec2"></div>
-		<section id="seccion1" class="container">
-			<article class="row" id="vacio"></article>
-			<article class="row">
-				<img class="bhome" src="img/home.svg" height="30px" onclick="toggle_visibility('dos');">
-			</article>
-
-			<article class="row">
-
-				<img id="skills2" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="img/habilidades.svg" height="150px">
-
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<h1>Herramientas</h1>
-					<img class="ico-habilidades" src="img/adobe.svg">
-					<img class="ico-habilidades" src="img/html.svg">
-					<img class="ico-habilidades" src="img/css.svg">
-					<img class="ico-habilidades" src="img/bootstrap.svg">
-					<img class="ico-habilidades" src="img/js.svg">
-					<img class="ico-habilidades" src="img/jq.svg">
-					<img class="ico-habilidades" src="img/sass.svg">
-					
-					
-					
-				</div>
-
-			</article>
-		</section>
-	</div>
-<!---------------------------------------------Sección 3-------------------------------------------->
-	<div id="tres">
-		<div class="fondoSec"></div>
-		<div class="fondoSec2"></div>
-		<section id="seccion1" class="container">
-			<article class="row" id="vacio"></article>
-			<article class="row">
-				<img class="bhome" src="img/home.svg" height="30px" onclick="toggle_visibility('tres');">
-			</article>
-
-			<article class="row">
-
-				<img id="skills3" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="img/contacto.svg" height="150px">
-
-				<div  class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<h1>Contacto</h1>
-					<p>
-						Bogotá, Colombia<br>
-						Celular: +57 (314)2588148
-					</p>
-					<a href="mailto:cristhian.c.rios@gmail.com">
-						<img id="mail" src="img/mail.svg" height="30px">
-					</a>
-				</div>
-			</article>
-		</section>
-	</div>
-<!---------------------------------------------Sección 4-------------------------------------------->
-	<div id="cuatro">
-		<div class="fondoSec"></div>
-		<div class="fondoSec2"></div>
-		<section id="seccion1" class="container">
-			<article class="row">
-				<img class="bhome" src="img/home.svg" height="30px" onclick="toggle_visibility('cuatro');">
-			</article>
-                  <h1>Proyectos</h1>
-			<article class="row">
-
-				<div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					
-					<div class="content">
-						<h2>Crónicas de Tierra Café</h2>
-							<div class="galleria">
-
-								<div><img src="img/ctc-1.png"></div>
-								<div><img src="img/ctc-2.png"></div>
-								<div><img src="img/ctc-3.png"></div>
-								<div><img src="img/ctc-4.png"></div>
-
-							</div>
-						<p>
-						"Crónicas de Tierra Café" es un videojuego de rol educativo, desarrollado en RPG Maker Vx Ace, con elementos visuales, narrativos y sonoros colombianos, cuyo fin es generar conciencia social a través del sentido de pertenencia en todos aquellos que lo jueguen, en especial el público joven entre los 12 y 18 años.<br>
-						Para este proyecto se implementó el uso de la metodología de diseño instruccional ABP
-						(Aprendizaje Basado en Problemas) y herramientas de la “Taxonomía de Bloom
-						para la era digital” para la planeación y diseño de actividades y dar todo el soporte educativo para el proceso de ludificación.
-						</p>
-						<a href="ctc/cronicas.html" target="_blank"><p>http://ctc.co</p></a>
-					</div>
-				</div>
-			</article>
-			
-			<article class="row">
-
-				<div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					
-					<div class="content">
-						<h2>Portal web Pijaos SAS</h2>
-							<div class="galleria">
-
-								<div><img src="img/mock-pijaos-1.png"></div>
-								<div><img src="img/mock-pijaos-4.png"></div>
-								<div><img src="img/mock-pijaos-2.png"></div>
-								<div><img src="img/mock-pijaos-3.png"></div>
-
-							</div>
-						<p>
-						Sitio web creado con Wordpress para la inmobiliaria ibaguereña Pijaos SAS.
-						El propósito de este es mostrar propiedades en arriendo y facilitar a los usuarios
-						la conexión con la plataforma Simi de facturación.
-						</p>
-						<a href="http://pijaos.co/" target="_blank"><p>http://pijaos.co/</p></a>
-					</div>
-				</div>
-			</article>
-			
-		</section>
-	</div>
+<!------------------------------------------main------------------------------------------------>
+<aside>
+	<a href="https://soundcloud.com/thisiscristhian" target="_blank"><p class="socicon-soundcloud"></p></a>
+	<a href="https://vimeo.com/crishood" target="_blank"><p class="socicon-vimeo"></p></a>
+	<a href="https://www.linkedin.com/in/cristhian-cepeda-r%C3%ADos-553b38121?trk=nav_responsive_tab_profile_pic"><p class="socicon-linkedin" target="_blank"></p></a>
+	<a href="https://github.com/crishood" target="_blank"><p class="socicon-github"></p></a>
+</aside>
+<main class="container">
 	
-<!---------------------------------------------Menú-------------------------------------------->		<div id="principal" class="container">
-		<main id="menu">
-				 	<section class="row">
-				 		<div class="col-xs-12 col-md-12" >
-				 			<img id="op1" src="img/ch-ico.svg" onclick="toggle_visibility('uno');">
-				 		</div>
-				 	</section>
+		<div id="about" class="tabcontent row">
+			<div class="col-md-5">
+				<img src="img/foto_bw.png" alt=""  id="pic">
+			</div>
+			
+			<div class="col-md-7" id="description">
+						<p> 
+				   	 	  <span class="f2"> My name is <span class="green">Cristhian Cepeda</span></span><br>
+							   i’m multimedia engineer, so i can <br>
+							  <span class="f1">develop awesome IT projects</span> <br>
+							  <span class="f0">web|</span> <span class="f3 green">animation</span><br>		 
+							  <span class="f4 green">music</span> <span class="f2">|interaction</span><br>
+							  i consider myself <span class="f4 green" id="rotate2"></span>
+						</p>
+						 <ul style="display:none">
+								<li><p>creative</p></li>
+								<li><p>loyal</p></li>
+								<li><p>self-taught</p></li>
+								<li><p>hardworking</p></li>
+						</ul>
+							 
+	
+		</div>
+
+		<div id="skills" class="tabcontent row">
 					
-					<section class="row">
-						<div  class="col-xs-12 col-md-12">
-							<img id="op2" src="img/habilidades.svg" onclick="toggle_visibility('dos');">
-							<img id="op3" src="img/trabajo.svg" onclick= "toggle_visibility('cuatro');" >
-						</div>
-					</section>
-					
-					<section class="row">
-						<div class="col-xs-12 col-md-12">
-							<img id="op4" src="img/contacto.svg" onclick="toggle_visibility('tres');">
-						</div>
-					</section>
-		</main>
-	</div>
-<!---------------------------------------------Footer-------------------------------------------->
-	<div id="pie">
-		<footer id="nombre">
-			<h1>Cristhian Cepeda</h1>
-			<h2 >Ingeniero en Multimedia</h2>
-					<div id="social">
-						<a href="https://soundcloud.com/thisiscristhian" target="_blank"><img src="img/soundcloud.svg" height="25px" margin-left="auto"></a>
-						<a href="http://crishood.tumblr.com/" target="_blank"><img src="img/tumblr.svg" height="25px" ></a>
-						<a href="https://www.instagram.com/crishood13/" target="_blank"><img src="img/instagram.svg" height="20px"></a>					
-						<a href="https://twitter.com/crishood13" target="_blank"><img src="img/twitter.svg" height="25px" margin-left="auto"></a>
-						<a href="https://vimeo.com/crishood" target="_blank"><img src="img/vimeo.svg" height="25px" margin-left="auto"></a>
-						
-					</div>
-				
-		</footer>
-	</div>
+		</div>
+
+		<div id="projects" class="tabcontent row">
+		
+		</div>
+		
+		<div id="contact" class="tabcontent row">
+			
+		</div>
+		
+		
+</main>
+
+<!------------------------------------------footer------------------------------------------------>
+<footer>
+	<ul>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'about')" id="defaultOpen" >about.</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'skills')">skills.</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'projects')">projects.</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'contact')">contact.</a></li>
+	</ul>
+</footer>
+
 <!---------------------------------------------Scripts-------------------------------------------->
 	<script src="js/jquery-2.2.3.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.js"></script>
-	<script src="js/galleria-1.4.2.js"></script>
+	
 	<script>
-		$(document).ready(function(){
-			$("#op1").hover(function(){
-				$("#quien").fadeToggle();				
-			});	
-			$("#op2").hover(function(){
-				$("#habilidades").fadeToggle();				
-			});
-			$("#op3").hover(function(){
-				$("#trabajo").fadeToggle();				
-			});
-			$("#op4").hover(function(){
-				$("#contacto").fadeToggle();				
-			});	
-		});
-		Galleria.loadTheme('js/galleria.classic.js');
-		Galleria.run('.galleria');
+		function tab(evt, sec) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(sec).style.display = "block";
+    evt.currentTarget.className += "active";
+		}
+		document.getElementById("defaultOpen").click();
+		
+		
+		var terms = $("ul li p");
+
+		function rotateTerm() {
+
+		var ct = $("#rotate2").data("term1") || 0;
+
+	
+	 
+	  $("#rotate2").data("term1", ct == terms.length -1 ? 0 : ct + 1).text(terms.eq([ct]).text()).fadeIn().delay(2000).fadeOut(1, rotateTerm);
+	  
+	}
+	$(rotateTerm);
 	</script>
 
 <!------------------------------------------Toggle-------------------------------------------------->
-	 <script>
-		 function toggle_visibility(id) {
-                var em = document.getElementById(id);
-                if(em.style.transform == "scale(1)")
-                  em.style.transform = "scale(0)";
-                else
-                  em.style.transform = "scale(1)";
-                 
-            }
-	</script>
+	
 		
 </body>
 </html>
