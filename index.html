@@ -27,18 +27,18 @@
 </aside>
 <main class="container">
 	
-		<div id="about" class="tabcontent row">
-			<div class="col-md-5">
+		<div id="tab-1" class="tabcontent current row">
+			<div class="col-md-5 col-sm-12 col-xs-12">
 				<img src="img/foto_bw.png" alt=""  id="pic">
 			</div>
 			
-			<div class="col-md-7" id="description">
+			<div class="col-md-7 col-sm-12 col-xs-12" id="description">
 						<p> 
 				   	 	  <span class="f2"> My name is <span class="green">Cristhian Cepeda</span></span><br>
 							   i’m multimedia engineer, so i can <br>
 							  <span class="f1">develop awesome IT projects</span> <br>
 							  <span class="f0">web|</span> <span class="f3 green">animation</span><br>		 
-							  <span class="f4 green">music</span> <span class="f2">|interaction</span><br>
+							  <span class="f4 green">music</span> <span class="f2">|e-learning</span><br>
 							  i consider myself <span class="f4 green" id="rotate2"></span>
 						</p>
 						 <ul style="display:none">
@@ -50,16 +50,24 @@
 							 
 	
 		</div>
-
-		<div id="skills" class="tabcontent row">
-					
+    </div>
+		<div id="tab-2" class="tabcontent row">
+			<div class="col-md-12" id="skills">
+               <span class="f4">These are my tools</span><br>
+                <span class="f0">"It is not the arrow, is the native"</span><br><br>
+                 <span class="f3 green">After effects| </span><span class="f3">Cinema 4D| </span><span class="f2 green">FlStudio| </span><span class="f2">Maya</span> <br>
+			    <span class="f2">Photoshop| </span><span class="f2">Illustrator| </span> <span class="f3">Premiere</span><br>
+			    <span class="f1">Indesign| </span> <span class="f2">Captivate| </span><span class="f2 green">Audition</span> 
+			    <br>
+			    <span class="f2 green">Html5| </span> <span class="f4">Css3|</span> <span class="f3">Javascript</span>
+			</div>		
 		</div>
 
-		<div id="projects" class="tabcontent row">
-		
+		<div id="tab-3" class="tabcontent row">
+		    
 		</div>
 		
-		<div id="contact" class="tabcontent row">
+		<div id="tab-4" class="tabcontent row">
 			
 		</div>
 		
@@ -68,11 +76,11 @@
 
 <!------------------------------------------footer------------------------------------------------>
 <footer>
-	<ul>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'about')" id="defaultOpen" >about.</a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'skills')">skills.</a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'projects')">projects.</a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="tab(event, 'contact')">contact.</a></li>
+	<ul class="tabs">
+		<li class="tablinks current"  data-tab="tab-1" >about.</li>
+		<li class="tablinks" data-tab="tab-2" >skills.</li>
+		<li class="tablinks" data-tab="tab-3" >projects.</li>
+		
 	</ul>
 </footer>
 
@@ -82,41 +90,28 @@
 	<script src="js/modernizr.js"></script>
 	
 	<script>
-		function tab(evt, sec) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(sec).style.display = "block";
-    evt.currentTarget.className += "active";
-		}
-		document.getElementById("defaultOpen").click();
-		
-		
 		var terms = $("ul li p");
-
 		function rotateTerm() {
 
 		var ct = $("#rotate2").data("term1") || 0;
-
+            $("#rotate2").data("term1", ct == terms.length -1 ? 0 : ct + 1).text(terms.eq([ct]).text()).fadeIn().delay(2000).fadeOut(1, rotateTerm);
+	    }
+	   $(rotateTerm);
+        
+        
+        $(document).ready(function(){
 	
-	 
-	  $("#rotate2").data("term1", ct == terms.length -1 ? 0 : ct + 1).text(terms.eq([ct]).text()).fadeIn().delay(2000).fadeOut(1, rotateTerm);
-	  
-	}
-	$(rotateTerm);
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tabcontent').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+        })
 	</script>
 
 <!------------------------------------------Toggle-------------------------------------------------->

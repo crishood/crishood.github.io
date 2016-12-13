@@ -85,9 +85,22 @@ main{
 	width: 60%;
 }
 #description{
+    
 	font-size: 20px;
 }
-
+#skills{
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+#skills span{
+    
+}
 /*footer*/
 footer{
 	position: fixed;
@@ -106,18 +119,18 @@ footer ul{
 footer ul li{
 	display: inline-block;
 }
-footer ul li a{
+footer ul li{
 	
 	margin: 0 10px;
 	font-size: 24px;
 	transition: all 0.6s;
 	cursor: pointer;
 }
-footer ul li a{
+footer ul li{
 	color: white;
 	text-decoration: none;
 }
-footer ul li a:hover{
+footer ul li:hover{
 	color: #009245;
 	text-decoration: underline;
 }
@@ -125,15 +138,16 @@ footer ul li a:hover{
 footer ul li a:visited{
 	color: white;
 }
-
-footer ul li a:focus, .active{
-	color: #009245;
+ul.tabs li.current{
+    color: #009245;
 	text-decoration: underline;
 }
 
+
+
 .tabcontent {
     -webkit-animation: fadeEffect 2s;
-    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+    animation: fadeEffect 2s; 
 }
 
 @-webkit-keyframes fadeEffect {
@@ -148,10 +162,13 @@ footer ul li a:focus, .active{
 
 
 .tabcontent {
-		display: none;
+	display: none;
     padding: 6px 12px;
       
 }
+.tabcontent.current{
+			display: inherit;
+		}
 .f0{font-size: 24px;}
 .f1{font-size:30px;}
 .f2{font-size:32px;}
