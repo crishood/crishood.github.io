@@ -25,8 +25,12 @@ and (max-device-width : 480px) {
         margin-left: auto; 
         margin-right: auto;
     }
+    header{
+        padding-top: 10px;
+      
+    }
     header .logo{
-        width: 70px;
+        width: 60px;
     }
     aside a p{
         font-size: 18px;
