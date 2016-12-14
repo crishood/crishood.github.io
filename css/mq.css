@@ -3,11 +3,11 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-    .f0{font-size:12px;}
-    .f1{font-size:18px;}
-    .f2{font-size:20px;}
-    .f3{font-size:22px;}
-    .f4{font-size:28px;}
+    .f0{font-size:10px;}
+    .f1{font-size:16px;}
+    .f2{font-size:18px;}
+    .f3{font-size:20px;}
+    .f4{font-size:24px;}
     main{
         margin: 5px auto;
         width: 100%;
@@ -34,7 +34,7 @@ and (max-device-width : 480px) {
         top: 35%;
     }
     footer{
-        background-color: rgba(25, 155, 25, 0.4);
+        background-color: rgba(0, 146, 69, 0.5);
        
     }
     footer ul li{
