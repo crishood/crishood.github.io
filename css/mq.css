@@ -3,11 +3,11 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-    .f0{font-size:14px;}
-    .f1{font-size:20px;}
-    .f2{font-size:22px;}
-    .f3{font-size:24px;}
-    .f4{font-size:30px;}
+    .f0{font-size:12px;}
+    .f1{font-size:18px;}
+    .f2{font-size:20px;}
+    .f3{font-size:22px;}
+    .f4{font-size:28px;}
     main{
         margin: 5px auto;
         width: 100%;
@@ -33,11 +33,13 @@ and (max-device-width : 480px) {
         right: 25px;
         top: 35%;
     }
+    footer{
+        background-color: rgba(25, 155, 25, 0.4);
+       
+    }
     footer ul li{
-	
-       
         font-size: 18px;
-       
+        margin-top: 15px;
     }
     
 }
