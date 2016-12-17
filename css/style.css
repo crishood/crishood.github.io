@@ -3,9 +3,13 @@
 	font-family: 'Book Antiqua';
 	color: white;
 }
+body{
+    background-color: black;
+}
 #background{
 	position: absolute;
-	z-index: -10;
+    opacity: 0.4;
+   	z-index: -10;
 }
 img.bg {
   /* Set rules to fill background */
@@ -27,6 +31,7 @@ img.bg {
     margin-left: -512px;   /* 50% */
   }
 }
+
 
 
 /*header*/
@@ -98,8 +103,13 @@ main{
     margin-left: auto; 
     margin-right: auto;
 }
-#skills span{
-    
+.project{
+    width: 100%;
+    opacity: 0.7;
+    transition: all 0.3s;
+ }
+.project:hover{
+    opacity: 1;
 }
 /*footer*/
 footer{

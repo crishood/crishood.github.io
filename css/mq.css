@@ -25,6 +25,9 @@ and (max-device-width : 480px) {
         margin-left: auto; 
         margin-right: auto;
     }
+    #description{
+        width: 100%;
+    }
     header{
         padding-top: 10px;
       
@@ -41,7 +44,7 @@ and (max-device-width : 480px) {
         top: 35%;
     }
     footer{
-        background-color: rgba(0, 146, 69, 0.5);
+        background-color: rgba(0, 146, 69, 0.25);
        
     }
     footer ul li{
