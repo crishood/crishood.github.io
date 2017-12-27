@@ -1,20 +1,60 @@
 /*general*/
-*{
-	font-family: 'Book Antiqua', serif;
-	color: white;
+@font-face {
+    font-family: 'quattrocento_romanregular';
+    src: url('quattrocento-regular-webfont.woff2') format('woff2'),
+         url('quattrocento-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
-body{
-    background-color: black;
+
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('cinzel-regular-webfont.woff2') format('woff2'),
+         url('cinzel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	font-family: 'quattrocento_romanregular', serif;
+	color: black;
+}
+.chip{
+    color: white;
+}
+h1, h2{
+    font-family: 'cinzelregular';
+    font-size: 18px;
+}
+#particles-js{
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top:0;
+   	z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,150,135,1);
+    background: -moz-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,77,64,1) 58%, rgba(0,77,64,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,135,1)), color-stop(58%, rgba(0,77,64,1)), color-stop(100%, rgba(0,77,64,1)));
+    background: -webkit-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,77,64,1) 58%, rgba(0,77,64,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,77,64,1) 58%, rgba(0,77,64,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,150,135,1) 0%, rgba(0,77,64,1) 58%, rgba(0,77,64,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,150,135,1) 0%, rgba(0,77,64,1) 58%, rgba(0,77,64,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009687', endColorstr='#004d40', GradientType=0 );
+    
 }
 #background{
-	position: absolute;
-    opacity: 0.4;
-   	z-index: -10;
+	position: fixed;
+    opacity: 1;
+   	z-index: -1;
+    overflow: hidden;
 }
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 1080px;
 	
   /* Set up proportionate scaling */
   width: 100%;
@@ -32,127 +72,12 @@ img.bg {
   }
 }
 
-
-
-/*header*/
-header{
-	padding-top: 25px;
-	text-align: center;
-}
-header .logo{
-	width: 90px;
-}
-/*aside*/
-aside{
-	position: fixed;
-	right: 50px;
-	top: 35%;
-}
-
-aside a{
-	text-decoration: none;
-}
-
-aside a:hover{
-	text-decoration: none;
-}
-
-aside a:visited{
-	color: white;
-	text-decoration: none;
-}
-
-aside a p{
-	font-size: 32px;
-	text-decoration: none;
-	transition: all 0.6s;
-}
-
-aside a p:hover{
-	color: #009245;
-	
-}
-
-
-
 /*main*/
-main{
-	margin: 100px auto;
-	width: 60%;
-}
-.container{
-	width: 60%;
-}
-
-#pic{
-	position: absolute;
-	right: 0;
-	width: 60%;
-}
-#description{
-    
-	font-size: 20px;
-}
-#skills{
-    text-align: right;
-    width: 50%;
-    position: absolute;
-    top: 30%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-.project{
+#main-content{
+	margin-top: 15%;
     width: 100%;
-    opacity: 0.7;
-    transition: all 0.3s;
- }
-.project:hover{
-    opacity: 1;
+    overflow: hidden;
 }
-/*footer*/
-footer{
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: white;
-	text-align: center;
-	padding-bottom: 25px;
-}
-
-footer ul{
-	list-style-type: none;
-	margin: 0 auto;
-}
-footer ul li{
-	display: inline-block;
-}
-footer ul li{
-	
-	margin: 0 10px;
-	font-size: 24px;
-	transition: all 0.6s;
-	cursor: pointer;
-}
-footer ul li{
-	color: white;
-	text-decoration: none;
-}
-footer ul li:hover{
-	color: #009245;
-	text-decoration: underline;
-}
-
-footer ul li a:visited{
-	color: white;
-}
-ul.tabs li.current{
-    color: #009245;
-	text-decoration: underline;
-}
-
 
 
 .tabcontent {
@@ -169,19 +94,3 @@ ul.tabs li.current{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-
-.tabcontent {
-	display: none;
-    padding: 6px 12px;
-      
-}
-.tabcontent.current{
-			display: inherit;
-		}
-.f0{font-size: 24px;}
-.f1{font-size:30px;}
-.f2{font-size:32px;}
-.f3{font-size:34px;}
-.f4{font-size:40px;}
-.green{	color: #009245;}
