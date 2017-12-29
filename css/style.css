@@ -27,6 +27,13 @@ h1, h2{
     font-family: 'cinzelregular';
     font-size: 18px;
 }
+
+p{
+    overflow: visible;
+}
+a{
+    margin: 3px;
+}
 #particles-js{
     position: fixed;
     margin: 0;
@@ -74,23 +81,20 @@ img.bg {
 
 /*main*/
 #main-content{
-	margin-top: 15%;
+	margin-top: 10%;
     width: 100%;
     overflow: hidden;
+    padding: 0 10px;
 }
 
+#logo{
+    display: block;
+    margin: 0 auto;
+}
 
 .tabcontent {
     -webkit-animation: fadeEffect 2s;
     animation: fadeEffect 2s; 
 }
 
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
