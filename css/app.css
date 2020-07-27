@@ -29,12 +29,14 @@ a:hover {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
   color: white;
   font-family: monospace;
+  padding-inline-start: 10px;
 }
 .skills li {
   text-align: center;
-  margin: 0 5px;
+  margin: 5px;
   padding: 5px 10px;
   border-radius: 20px;
   background-color: #4FC231;
@@ -62,7 +64,7 @@ body {
 .app {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -121,12 +123,42 @@ body {
   box-shadow: 2px 2px 5px #012D38;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .app {
     display: block;
   }
 
+  .presentation {
+    width: 100%;
+  }
+
   .experience {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .app h1 {
+    font-size: 1.5em;
+  }
+  .app h2 {
+    font-size: 1em;
+  }
+  .app h3 {
+    font-size: 0.9em;
+  }
+  .app h4 {
+    font-size: 0.8em;
+  }
+  .app h5 {
+    font-size: 0.7em;
+  }
+  .app h6 {
+    font-size: 0.6em;
+  }
+  .app p {
+    font-size: 0.9em;
+  }
+  .app li {
+    font-size: 0.8em;
   }
 }
