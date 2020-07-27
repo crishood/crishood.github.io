@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Telefonica Text';
     src: url('fonts/TelefonicaText.woff2') format('woff2'),
@@ -450,3 +451,457 @@ button{
 
 
 }
+=======
+@font-face {
+    font-family: 'Telefonica Text';
+    src: url('fonts/TelefonicaText.woff2') format('woff2'),
+         url('fonts/TelefonicaText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telefonica Text';
+    src: url('fonts/TelefonicaText-Bold.woff2') format('woff2'),
+         url('fonts/TelefonicaText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Telefonica Text', arial;
+    margin: 0;
+    color: #525252;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    color: #67a6d6;
+}
+
+h2{
+    margin: 10px 0 20px;
+    font-size: 32px;
+}
+
+h3{
+    margin: 0;
+    font-size: 26px;
+}
+
+h4{
+    margin: 0;
+}
+
+h5{
+    margin-bottom: 5px;
+}
+
+p{
+    margin: 2px 0;
+}
+
+a{
+    color: #525252;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button{
+    background-color: #8cbf50;
+    width: 100%;
+    font-family: inherit;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 0 5px;
+}
+
+.wrapper-narrow{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper-wide{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-white{
+    background-color: white;
+    border: solid 1px #dfdfdf;
+    color: #525252;    
+}
+
+.btn-blue{
+    background-color: #67a6d6;
+}
+
+.scratch{
+    text-decoration: line-through;
+}
+
+.badge{
+    padding: 3px 20px;
+    background-color: #724a87;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.header-desktop{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-mobile{
+    display: none;
+}
+
+.logo{
+    margin: 0 20px;
+}
+
+.header-call{
+    margin: 0 20px;
+}
+
+.phone-number{
+    font-weight: normal;
+    font-size: 22px;
+    color: #8cbf50;
+}
+
+.hero{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hero-btn{
+    display: flex;
+    margin: 60px auto 20px;
+    width: 75%;
+}
+
+.hero-check{
+    width: 75%;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.hero-banner{
+    margin: 0 auto -4px;
+}
+
+.hero-banner-mobile{
+    display: none;
+}
+
+.enjoy{
+    text-align: center;
+    color: white;
+    background-color: #67a6d6;
+    padding: 40px;
+    
+}
+
+.enjoy-grid{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.enjoy-social{
+    margin: 0 30px;
+}
+
+.plans{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.plans-grid{
+    display: inline-grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 20px;
+}
+
+.plan{
+    border: solid 1px #dfdfdf;
+    width: 400px;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.plan-blue{
+    border: solid 2px #67a6d6;
+}
+
+.plan-size{
+    padding: 10px 80px;
+    background-color: #8cbf50;
+    color: white;
+}
+
+.plan-size-blue{
+    background-color: #67a6d6;
+}
+
+.plan-size h4{
+    text-transform: uppercase;
+}
+
+.plan-item{
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: solid 2px #dfdfdf;
+}
+
+.plan-item-nb{
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.plan-item-pink{
+    padding: 5px;
+    background-color: #c3586e;
+    color: white;
+    text-transform: uppercase;
+}
+
+.flags{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.flag-icon{
+    margin: 0 2px;
+}
+
+.unlimited-apps, .m-play{
+    margin: 0;
+}
+
+.smartphones{
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.smartphones-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+
+.smartphone-card{
+    text-align: left;
+    border-radius: 3px;
+    border: solid 1px #dfdfdf;
+    
+}
+
+.top-card{
+    background-color: #67a6d6;
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px 30px 10px;
+}
+.top-title{
+    margin-bottom: 20px;
+}
+
+.top-smart{
+    margin: 0 0 -40px;
+    position: relative;    
+}
+
+.orange{
+    background-color: #e5aa51;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 300px;
+}
+
+.bottom-card{
+    background-color: #e9eae8;
+    padding: 40px 30px 10px;
+}
+
+.bottom-price{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-price button{
+    width: 50%;
+}
+
+.terms{
+    text-align: left;
+    background-color: #e9eae8;
+    padding: 60px 0;
+}
+
+.full-terms{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer{
+    padding: 20px 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width : 500px) {
+    
+    .wrapper-narrow{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .wrapper-wide{
+        width: 100%;
+    }
+    
+    .header-desktop{
+        display: none;
+    }
+    
+    .header-mobile{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-btn{
+        display: flex;
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .btn-white{
+        display: none;
+    }
+    
+    .hero-check{
+        display: none;
+    }
+    .hero-banner{
+        display: none;
+    }
+    .hero-banner-mobile{
+        display: block;
+        margin: 0 0 -4px;
+    }
+    .enjoy{
+        padding: 20px;
+        
+    }
+    
+    .enjoy-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .enjoy-social{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .ghost-plan{
+        display: none;
+    }
+    .plans-grid{
+        display: block;
+    }
+    .plan{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .plan-item{
+        padding: 20px;
+        margin: 0;
+    }
+    .unlimited-apps img{
+        width: 150px;
+    }
+    .smartphones{
+        padding-bottom: 5px;
+    }
+
+    .smartphones-grid{
+        display: block;
+        margin-top: 30px;
+    }
+    
+    .smartphone-card{
+        margin-bottom: 5px;
+    }
+
+    .orange{
+        font-size: 8px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 120px;
+        padding: 5px;
+    }
+
+    .badge{
+        font-size: 12px;
+    }
+
+    .bottom-price{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .bottom-price button{
+        width: 100%;
+    }
+
+    .top-card{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 10px 15px 10px;
+    }
+
+    .terms{
+        padding: 20px 0;
+    }
+    .terms-content{
+        padding: 0 20px;
+    }
+
+
+}
+>>>>>>> ffd17a6c195e4326393e7aa43a8e39a12d9fa298
