@@ -24,9 +24,11 @@ body{
   }
   .two {
     background-image: url("../img/02.jpg");
+    background-repeat: no-repeat;
   }
   .three {
     background-image: url("../img/03.jpg");
+    background-repeat: no-repeat;
   }
 
   .bg{
