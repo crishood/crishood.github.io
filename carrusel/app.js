@@ -1,3 +1,6 @@
+window.onload = function() {
+    gallery.style.display = "none";
+}
 
 var thumbs = new Swiper('.gallery-thumbs' , {
 
