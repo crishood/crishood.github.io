@@ -58,7 +58,8 @@ a:hover {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: white;
+  background-color: #012D38;
+  text-align: center;
 }
 
 .app {
