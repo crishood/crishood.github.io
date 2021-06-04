@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #EAEAEA;
+}
+/* Typos */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap');
+
+h1{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 64px;
+  color: #C2DF38;
+
+}
+h2{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 36px;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+a, li{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+.mono{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+h2, h3, p, li, a{
+  color: #012C37;
+}
+
+header{
+  background-color: #012C37;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.white{
+  color: white;
+}
+
+.grey{
+  color: #B3B3B3;
+}
+
+.section{
+  margin-top: 24px;
+  padding: 12px 10vw;
+}
+.color-row{
+  display:flex;
+  margin: 12px auto;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.color-container{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(1, 44, 55, 0.25);
+  border-radius: 3px;
+}
+
+.color-container p{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+.green-yellow-bg{
+  background-color: #C2DF38;
+}
+.galaxy-blue-bg{
+  background-color: #012C37;
+}
+.green-hood-bg{
+  background-color: #009000;
+}
+.lemon-hood-bg{
+  background-color: #4FC231;
+}
+.light-blue-bg{
+  background-color: #277B8F;
+}
+.violet-hood-bg{
+  background-color: #901CD7;
+}
+.grey-hood-bg{
+  background-color: #B3B3B3;
+}
+.white-bg{
+  background-color: white;
+}
+
+.typo-container{
+  margin: 48px auto;
+}
+
+.typo-container h1, .typo-container h2, .typo-container h3, .typo-container p{
+  color: #B3B3B3;
+}
+.atom-container{
+  margin: 12px auto;
+}
+.btn{
+  width: 224px;
+  padding: 12px 0px;
+  align-items: center;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #C2DF38;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+.field{
+  border-radius: 3px;
+  border: 1px solid #B3B3B3;
+  padding: 8px 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #012C37;
+}
