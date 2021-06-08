@@ -21,12 +21,13 @@ h1{
 h2{
   font-family: 'Archivo Black', sans-serif;
   font-size: 36px;
-  margin:8px 6px;
+  margin-top: 6px;
 }
 h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
+  margin-top: 6px;
 }
 p{
   font-family: 'Roboto', sans-serif;
