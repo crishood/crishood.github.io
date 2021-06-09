@@ -188,10 +188,12 @@ footer p{
 
 /* Ui Items Structure */
 .color-row{
-  display:flex;
-  margin: 12px auto;
-  gap: 12px;
-  overflow-x: auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: start;
+  margin: 24px auto;
+  grid-row-gap: 14px;
+
 }
 
 .color-container{
@@ -236,6 +238,9 @@ footer p{
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+  .color-row{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   }
 
 @media only screen and (max-device-width : 767px) {
@@ -252,4 +257,17 @@ footer p{
       display: grid;
       grid-template-columns: 1fr;
     }
+    .color-row{
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+    }
+    .color-container{
+      width: 120px;
+      height: 120px;
+      padding: 5px;
+    }
+    .header-title{
+      flex-direction: column;
+    }
+
   }
