@@ -21,7 +21,7 @@ h1{
 h2{
   font-family: 'Archivo Black', sans-serif;
   font-size: 36px;
-  margin-top: 6px;
+  margin: 6px auto;
 }
 h3{
   font-family: 'Roboto', sans-serif;
@@ -93,9 +93,13 @@ a:hover{
   background-color: #C2DF38;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: white;
+  font-weight: 700;
+  color: #012C37;
   display: inline-block;
   text-align: center;
+}
+.btn:hover{
+  color: white;
 }
 
 .field{
@@ -140,6 +144,8 @@ a:hover{
   width: 100.1%;
   border-radius: 3px 3px 0 0;
 }
+
+
 
 /* Structure */
 header{
