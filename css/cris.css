@@ -82,6 +82,7 @@ a:hover{
 }
 
 /* Atoms */
+
 .btn{
   display: block;
   margin: 8px 0;
@@ -124,6 +125,7 @@ a:hover{
   border-radius: 3px;
   padding: 0 2px;
 }
+
 .cards-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
