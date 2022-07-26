@@ -1,0 +1,11 @@
+.bio{
+    @include display-section;
+    p{
+        width: 70%;
+    }
+}
+.avatar img{
+    border-radius: 100%;
+    width: 200px;
+    border:#C2DF38 solid 3px;
+  }

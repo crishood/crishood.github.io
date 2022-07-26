@@ -1,0 +1,28 @@
+html,
+body {
+  font-family: var(--font-default);
+  color: var(--galaxy-blue);
+  
+}
+
+h1, h2 {
+    font-family: var(--font-titles);
+}
+
+h3, h4, h5, h6, button{
+    font-family: var(--font-default);
+    font-weight: 700;
+}
+
+button{
+    background-color: var(--green-yellow);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+
+button:hover{
+    color: white;
+}
