@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ae5ccad.css",
-    "main.js": "/static/js/main.8843f0cc.js",
-    "static/media/dimelo.png": "/static/media/dimelo.299445c744929386e1f2.png",
-    "static/media/crishood.png": "/static/media/crishood.d26b3e09d917b097cfa6.png",
-    "static/media/trello.png": "/static/media/trello.426ce9f69a8a98557003.png",
-    "static/media/avatar.jpg": "/static/media/avatar.d3b9ae26323b8f097503.jpg",
-    "index.html": "/index.html",
-    "main.5ae5ccad.css.map": "/static/css/main.5ae5ccad.css.map",
-    "main.8843f0cc.js.map": "/static/js/main.8843f0cc.js.map"
+    "main.css": "/react-gh-pages/static/css/main.5ae5ccad.css",
+    "main.js": "/react-gh-pages/static/js/main.7f75dcb1.js",
+    "static/media/dimelo.png": "/react-gh-pages/static/media/dimelo.299445c744929386e1f2.png",
+    "static/media/crishood.png": "/react-gh-pages/static/media/crishood.d26b3e09d917b097cfa6.png",
+    "static/media/trello.png": "/react-gh-pages/static/media/trello.426ce9f69a8a98557003.png",
+    "static/media/avatar.jpg": "/react-gh-pages/static/media/avatar.d3b9ae26323b8f097503.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.5ae5ccad.css.map": "/react-gh-pages/static/css/main.5ae5ccad.css.map",
+    "main.7f75dcb1.js.map": "/react-gh-pages/static/js/main.7f75dcb1.js.map"
   },
   "entrypoints": [
     "static/css/main.5ae5ccad.css",
-    "static/js/main.8843f0cc.js"
+    "static/js/main.7f75dcb1.js"
   ]
 }
