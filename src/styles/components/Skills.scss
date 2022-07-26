@@ -1,4 +1,25 @@
 .skills{
     @include display-section;
     background-color: var(--lighter-iron);
+    min-height: 40vh;
 }
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skill-badge{
+    background-color: var(--galaxy-blue);
+    color: var(--green-yellow);
+    padding: 7px;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
