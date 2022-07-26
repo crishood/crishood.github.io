@@ -1,0 +1,11 @@
+.contact{
+    @include display-section;
+}
+
+.social-media{
+    display: flex;
+    gap: 12px;
+    a:hover{
+        color: var(--galaxy-blue);
+    }
+}

@@ -1,2 +1,1 @@
-# crishood.github.io
-CrisHood's Profile
+# Welcome to CrisHood's dev portfolio
