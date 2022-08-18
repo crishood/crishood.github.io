@@ -8,15 +8,22 @@ const Projects = () => {
     {
       title: "CrisHood",
       description:
-        "Ecommerce and blog to sell my beats licenses and share content for urban music producers.",
+        "This is my longlife project. Some time ago it was just an static website describing my music production profile but, I decided to turn it into an Ecommerce and blog to sell my beats licenses and share content for urban music producers. I designed all the branding .",
       picture: crishood,
-      tags: ["WordPress", "Copywriting", "Content creation", "Beatmaking"],
+      tags: [
+        "WordPress",
+        "Copywriting",
+        "Content creation",
+        "Beatmaking",
+        "Design",
+        "Branding",
+      ],
       link: "https://crishood.com/",
     },
     {
       title: "Dímelo",
       description:
-        "Dímelo is a social network to find beatmakers and songwriters in your city. Individual project for Make IT Real Bootcamp.",
+        "Dímelo is a social network to find beatmakers and songwriters in your city. I made this fullstack application as individual project for Make IT Real Bootcamp. I combined my passion for code and music in one place.",
       picture: dimelo,
       tags: [
         "React",
@@ -32,7 +39,7 @@ const Projects = () => {
     {
       title: "Trello",
       description:
-        "Trello is an app to organize your tasks under the kanban system. Team project made for Make IT Real Bootcamp.",
+        "Trello is an app to organize your tasks under the kanban system. I developed this app with two good friends of Make IT Real (Daniela and Johan).",
       picture: trello,
       tags: [
         "React",

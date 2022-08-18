@@ -1,11 +1,26 @@
 .bio{
-    @include display-section;
-    p{
-        width: 70%;
-    }
+  
+    width: 70%;
+    margin: 0 auto;
+    @media only screen and (max-width: 768px)  {
+        width: 90%;
+      }
+
+}
+
+.bio-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 12px;
+    @media only screen and (max-width: 768px)  {
+        flex-direction: column;
+      }
 }
 .avatar img{
     border-radius: 100%;
     width: 200px;
-    border:#C2DF38 solid 3px;
+    border:#C2DF38 solid 7px;
   }

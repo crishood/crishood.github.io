@@ -7,3 +7,11 @@
     gap: 12px;
     padding: 32px 12px;
 }
+
+@mixin galaxy{
+    background-image: url("../../assets/img/background.png");
+    background-attachment: fixed;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

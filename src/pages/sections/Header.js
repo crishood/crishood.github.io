@@ -7,15 +7,14 @@ const Header = () => {
     "<Creator />",
     "<Multimedia Engineer />",
     "<M a g o de los beats />",
-    "<Ninja />",
     "<Fullstack Developer />",
     "<Developer />",
   ];
   const [title, setTitle] = useState(titles[0]);
-  let index = 2;
   const randomTitle = () => {
+    let index = 2;
     setInterval(function () {
-      index = Math.floor(Math.random() * 8);
+      index = Math.floor(Math.random() * 7);
       setTitle(titles[index]);
     }, 1000);
   };
